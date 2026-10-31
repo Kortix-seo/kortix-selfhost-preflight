@@ -2,7 +2,7 @@
 
 Preflight checks for a self-hosted Kortix instance, open source and runnable before the first `kortix self-host start`.
 
-Kortix is the open-source AI Operating System: agents, skills, memory and triggers live in one git repository, and sessions run on sandbox machines created with a Platinum API key. A self-hosted instance is one Docker Compose stack on a server you control. Most installs that fail, fail on something the installer never asks about: a missing `api.` record, a port already taken, a shell that cannot reach the Docker daemon, an instance whose `.env` has no domain, or an instance left with sign-up wide open. This script checks those in about ten seconds, before anything starts.
+Kortix is the open-source CompanyOS: agents, skills, memory and triggers live in one git repository, and sessions run on sandbox machines created with a Platinum API key. A self-hosted instance is one Docker Compose stack on a server you control. Most installs that fail, fail on something the installer never asks about: a missing `api.` record, a port already taken, a shell that cannot reach the Docker daemon, an instance whose `.env` has no domain, or an instance left with sign-up wide open. This script checks those in about ten seconds, before anything starts.
 
 ## What it checks
 
