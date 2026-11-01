@@ -64,6 +64,8 @@ Nothing here is required to run Kortix.
 - Self-hosting documentation: https://kortix.com/docs/host
 - The project manifest, which decides what an agent may reach: https://kortix.com/docs/project/manifest
 
+The two links above cover the install and the manifest; [what a self-hosted AI workspace has to carry](https://opensourceclaudecowork.com/self-hosted-ai-workspace) sets the tooling layer and the model layer side by side, so an operator who has just passed these checks can see which one the instance is for and which one the sandbox provider runs.
+
 ## The endpoint check the preflight does not run
 
 `preflight.sh` reads the host: Docker, DNS, ports, `PLATINUM_API_KEY`, the instance `.env`. It never sends a request to a model provider, so it cannot tell you whether the endpoint a Claude Code install points at is yours. [Claude Code against a local endpoint](docs/claude-code-against-a-local-endpoint.md) runs the one-token request against three addresses and shows what each answer means, including the 401 that proves a request left your network.
